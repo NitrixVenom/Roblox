@@ -93,7 +93,7 @@ local a, b = {
                     {12, "ModuleScript", {"Notification"}},
                     {13, "ModuleScript", {"Section"}},
                     {17, "ModuleScript", {"Window"}},
-                    {14, "ModuleScript", {"Tab"}},
+                    {14, "ModuleScript", {"Main"}},
                     {10, "ModuleScript", {"Dialog"}},
                     {8, "ModuleScript", {"Assets"}},
                     {16, "ModuleScript", {"TitleBar"}},
@@ -1173,7 +1173,7 @@ local aa = {
                     Size = UDim2.new(1, 0, 0, 34),
                     BackgroundTransparency = 1,
                     Parent = s,
-                    ThemeTag = {BackgroundColor3 = "Tab"}
+                    ThemeTag = {BackgroundColor3 = "Main"}
                 },
                 {
                     k("UICorner", {CornerRadius = UDim.new(0, 6)}),
@@ -1686,7 +1686,7 @@ local aa = {
                 "TextLabel",
                 {
                     RichText = true,
-                    Text = "Tab",
+                    Text = "Main",
                     TextTransparency = 0,
                     FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.SemiBold, Enum.FontStyle.Normal),
                     TextSize = 28,
