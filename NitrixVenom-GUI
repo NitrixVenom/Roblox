@@ -93,7 +93,7 @@ local a, b = {
                     {12, "ModuleScript", {"Notification"}},
                     {13, "ModuleScript", {"Section"}},
                     {17, "ModuleScript", {"Window"}},
-                    {14, "ModuleScript", {Main}},
+                    {14, "ModuleScript", {"Tab"}},
                     {10, "ModuleScript", {"Dialog"}},
                     {8, "ModuleScript", {"Assets"}},
                     {16, "ModuleScript", {"TitleBar"}},
@@ -1159,7 +1159,7 @@ local aa = {
             local t, u = e(h), o.Window
             local v = t.Elements
             o.TabCount = o.TabCount + 1
-            local w, x = o.TabCount, {Selected = false, Name = q, Type = Main}
+            local w, x = o.TabCount, {Selected = true, Name = q, Type = "Main"}
             if t:GetIcon(r) then
                 r = t:GetIcon(r)
             end
@@ -1173,7 +1173,7 @@ local aa = {
                     Size = UDim2.new(1, 0, 0, 34),
                     BackgroundTransparency = 1,
                     Parent = s,
-                    ThemeTag = {BackgroundColor3 = Main}
+                    ThemeTag = {BackgroundColor3 = "Tab"}
                 },
                 {
                     k("UICorner", {CornerRadius = UDim.new(0, 6)}),
@@ -1686,7 +1686,7 @@ local aa = {
                 "TextLabel",
                 {
                     RichText = true,
-                    Text = Main,
+                    Text = "Tab",
                     TextTransparency = 0,
                     FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.SemiBold, Enum.FontStyle.Normal),
                     TextSize = 28,
