@@ -1159,7 +1159,7 @@ local aa = {
             local t, u = e(h), o.Window
             local v = t.Elements
             o.TabCount = o.TabCount + 1
-            local w, x = o.TabCount, {Selected = false, Name = q, Type = "Tab"}
+            local w, x = o.TabCount, {Selected = false, Name = q, Type = "Main"}
             if t:GetIcon(r) then
                 r = t:GetIcon(r)
             end
@@ -1686,7 +1686,7 @@ local aa = {
                 "TextLabel",
                 {
                     RichText = true,
-                    Text = "Tab",
+                    Text = "Main",
                     TextTransparency = 0,
                     FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.SemiBold, Enum.FontStyle.Normal),
                     TextSize = 28,
