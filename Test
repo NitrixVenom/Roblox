@@ -161,9 +161,10 @@ end
 
 do -- C4hash
     keyFunctions.C4hash = function()
-        local C4hash = require(game:GetService("ReplicatedStorage").Game.Item.C4).ShootBegin
+        local C4hashes = require(game:GetService("ReplicatedStorage").Game.Item.C4).ShootBegin
 
-        return getproto(C4hash, 1)
+        local Gun = require(game:GetService("ReplicatedStorage").Game.Item.Gun)
+        return getproto(Gun.SetupBulletEmitter)
     end
 end
 
