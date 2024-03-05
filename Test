@@ -159,6 +159,14 @@ do -- damage
     end
 end
 
+do -- C4
+    keyFunctions.C4Shoot = function()
+        local C4Hash = require(gameFolder.Item.C4).ShootBegin
+
+        return getproto(C4Hash, 1)
+    end
+end
+
 do -- switchteam (needs to be called before jointeam)
     keyFunctions.JoinTeam = function()
         return getproto(teamChooseUI.Show, 4)
@@ -291,12 +299,6 @@ do -- equipgun / unequipgun / buygun
 
     keyFunctions.BuyGun = function()
         return displayGunList, 3
-    end
-end
-
-do -- C4
-    keyFunctions.cfourhash = function()
-        return require(gameFolder.Item.C4).ShootBegin
     end
 end
 
