@@ -163,7 +163,7 @@ do -- C4
     keyFunctions.C4Shoot = function()
         local C4Hash = require(gameFolder.Item.C4).ShootBegin
 
-        return getproto(C4Hash)
+        return getproto(C4Hash, 1)
     end
 end
 
