@@ -158,7 +158,7 @@ do -- damage
         return getproto(militaryAddedFunction, 1)
     end
 end
-rag
+
 do -- switchteam (needs to be called before jointeam)
     keyFunctions.JoinTeam = function()
         return getproto(teamChooseUI.Show, 4)
