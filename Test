@@ -296,7 +296,7 @@ end
 
 do -- C4
     keyFunctions.cfourhash = function()
-        return require(gameFolder.Item.C4)
+        return require(gameFolder.Item.C4))
     end
 end
 
