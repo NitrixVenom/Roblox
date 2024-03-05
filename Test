@@ -300,6 +300,12 @@ do -- ragdoll
     end
 end
 
+do -- unragdoll
+    keyFunctions.Ragdoll = function()
+        return require(gameFolder.Falling).StopRagdolling
+    end
+end
+
 do -- exception keys
     local exceptionKeysFound, exceptionKeyCount = 0, 0
     
