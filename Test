@@ -294,12 +294,6 @@ do -- equipgun / unequipgun / buygun
     end
 end
 
-do -- C4
-    keyFunctions.cfourhash = function()
-        return require(gameFolder.Item.C4))
-    end
-end
-
 do -- ragdoll
     keyFunctions.Ragdoll = function()
         return require(gameFolder.Falling).StartRagdolling
