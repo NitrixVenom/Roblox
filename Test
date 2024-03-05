@@ -301,8 +301,8 @@ do -- ragdoll
 end
 
 do -- unragdoll
-    keyFunctions.UnRagdoll = function()
-        return require(gameFolder.Falling).StopRagdolling
+    keyFunctions.Ragdoll = function()
+        return require(gameFolder.Falling).OnUnragdolled
     end
 end
 
