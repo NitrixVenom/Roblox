@@ -3845,6 +3845,30 @@ function library:Playerlist(max_players)
         end
     end
 
+    local function create_card(plr)
+        if not player_data[plr].image then
+            current_player = plr
+            player_data[plr].name = plr.Name
+
+            spawn(function()
+
+                player_data[plr].image = image
+                
+                if current_player == plr then
+                    headshot.Data = image
+                end
+            end)
+        else
+            if current_player ~= plr then
+                current_player = plr
+            else
+                current_player = nil
+            end
+        end
+
+        handle_player()
+    end
+
     local function create_player(plr)
         if not self.unloaded then
             local idx = #players + 1
@@ -3875,6 +3899,7 @@ function library:Playerlist(max_players)
             update()
 
             bar.MouseButton1Click:Connect(function()
+                create_card(plr)
             end)
         end
     end
