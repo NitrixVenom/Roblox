@@ -3845,21 +3845,6 @@ function library:Playerlist(max_players)
         end
     end
 
-    local function create_card(plr)
-        local Players = game:GetService("Players")
-
-        local player = Players.LocalPlayer
-
-        -- Fetch the thumbnail
-        local userId = player.UserId
-        local thumbType = Enum.ThumbnailType.HeadShot
-        local thumbSize = Enum.ThumbnailSize.Size420x420
-        local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
-
-        -- Set the ImageLabel's content to the user thumbnail
-        local imageLabel = image
-    end
-
     local function create_player(plr)
         if not self.unloaded then
             local idx = #players + 1
