@@ -3875,7 +3875,6 @@ function library:Playerlist(max_players)
             update()
 
             bar.MouseButton1Click:Connect(function()
-                create_card(plr)
             end)
         end
     end
